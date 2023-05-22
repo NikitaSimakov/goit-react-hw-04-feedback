@@ -1,0 +1,27 @@
+.feedback_thumb_button {
+    display: flex;
+    flex-wrap: nowrap;
+    align-items: center;
+    justify-content: space-around;
+    width: 250px;
+    margin: 15px 0;
+}
+
+.feedback_button {
+    height: 30px;
+    width: 80px;
+    border-style: none;
+    border-radius: 3px;
+    cursor: pointer;
+}
+
+.feedback_button:first-child {
+    background-color: #59ff00;
+
+}
+.feedback_button:nth-child(2) {
+    background-color: #f8e536;
+}
+.feedback_button:last-child {
+    background-color: #ff3434;
+}
