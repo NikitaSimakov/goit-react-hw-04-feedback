@@ -12,9 +12,9 @@ export const App = () => {
   const feedbackTypes= ['good', 'neutral', 'bad']
   
  const onLeaveFeedback = value => {
-    if (value === 'good') setGood(good + 1);
-    if (value === 'neutral') setNeutral(neutral + 1);
-    if (value === 'bad') setBad(bad + 1);
+    if (value === 'good') setGood(prevState => prevState + 1);
+    if (value === 'neutral') setNeutral(prevState => prevState + 1);
+    if (value === 'bad') setBad(prevState => prevState + 1);
   };
   const countTotalFeedback = () => {
     return good + neutral + bad;
