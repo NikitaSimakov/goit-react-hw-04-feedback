@@ -2,8 +2,6 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import css from './FeedbackOptions.module.css';
 
-// const stateType = ['good', 'neutral', 'bad'];
-
 export const Buttons = ({ onLeaveFeedback, options }) => {
   const [typeGood, typeNeutral, typeBad] = options;
 
